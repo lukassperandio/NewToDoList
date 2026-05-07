@@ -59,7 +59,7 @@ public class Task {
         this.priority = priority;
     }
 
-    public boolean isCompleted() {
+    public boolean getCompleted() {
         return completed;
     }
     public void setCompleted(boolean completed) {
