@@ -20,7 +20,7 @@ public class TaskService {
         this.userRepository = userRepository;
     }
 
-    public List<TaskResponse> getAll(){
+    public List<TaskResponse> getAllTasks(){
         return taskRepository.findAll()
                 .stream()
                 .map(u -> new TaskResponse(u.getId(), u.getTitle(), u.getDescription(),  u.getPriority(), u.getCompleted(), u.getUser().getId()))
